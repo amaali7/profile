@@ -1,0 +1,23 @@
+$bp:(
+    mobile : 480px,
+    tablet : 768px,
+    desktop : 1440px,
+);
+
+@mixin Query($screen) {
+    @each $key, $value in $bp {
+        @if ($screen == $key) {
+            @media (max-width: $value) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin ClearFix {
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
