@@ -1,0 +1,97 @@
+@import "../styles/mixin.scss";
+@include RoundedHeader;
+
+.experience-page {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-content: space-between;
+    gap: 14px;
+    width: 100%;
+    @include Card;
+  }
+}
+
+@include Query(mobile) {
+  .experience-page {
+    .container {
+      gap: 60px;
+
+      flex-direction: column;
+      .card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 10px;
+      }
+      .mas {
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+@include Query(tablet) {
+  .experience-page {
+    .container {
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: -10px;
+      }
+      .mas {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+@include Query(smallScreen) {
+  .experience-page {
+    .container {
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: -20px;
+      }
+      .mas {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+// @include Query(largScreen){
+//     .education-page{
+//         display: grid;
+//         grid-template-columns: repeat(16, 1fr);
+//         grid-template-areas:
+//             " t t t t  t t t t  i i i i  i i i i "
+//             " t t t t  t t t t  i i i i  i i i i"
+//             " t t t t  t t t t  i i i i  i i i i"
+//             " t t t t  t t t t  i i i i  i i i i";
+//     }
+// }
+// @include Query(extraLarg){
+//     .education-page{
+//         display: grid;
+//         grid-template-columns: repeat(16, 1fr);
+//         grid-template-areas:
+//             " t t t t  t t t t  i i i i  i i i i "
+//             " t t t t  t t t t  i i i i  i i i i"
+//             " t t t t  t t t t  i i i i  i i i i"
+//             " t t t t  t t t t  i i i i  i i i i";
+//     }
+// }

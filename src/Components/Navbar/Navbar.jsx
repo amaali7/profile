@@ -10,7 +10,7 @@ const Navbar = () => {
         1: 'Education',
         2: 'Experience',
         3: 'Skills',
-        4: 'Contact'
+        4: 'Info'
     }
     return (
         <nav className='navbar'>
@@ -45,7 +45,7 @@ const Navbar = () => {
                     to="Education"
                     spy={true}
                     smooth={true}
-                    offset={-190}
+                    offset={-54}
                     duration={1500}
                     onClick={()=> setNav(1)}
 
@@ -58,7 +58,7 @@ const Navbar = () => {
                     to="Experience"
                     spy={true}
                     smooth={true}
-                    offset={-190}
+                    offset={-54}
                     duration={1500}
                     onClick={()=> setNav(2)}
                 >
@@ -70,7 +70,7 @@ const Navbar = () => {
                     to="Skills"
                     spy={true}
                     smooth={true}
-                    offset={-190}
+                    offset={-54}
                     duration={1500}
                     onClick={()=> setNav(3)}
                 >
@@ -79,14 +79,14 @@ const Navbar = () => {
                 </Link>
                 <Link
                     activeClass='active-link'
-                    to="Contact"
+                    to="Info"
                     spy={true}
                     smooth={true}
-                    offset={-190}
+                    offset={-54}
                     duration={1500}
                     onClick={()=> setNav(4)}
                 >
-                    Contact
+                    Info
             
                 </Link>
             </div>

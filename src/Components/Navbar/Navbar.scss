@@ -1,10 +1,14 @@
 @import '../../styles/mixin.scss';
 
+$nav-height : 54px;
+$nav-element-pading : 16px;
 .navbar{
-    height: 42px;
+    height: $nav-height;
     width: 100%;
-    background-color: #ffffff00;
-    position: relative;
+    background-color: #00000049;
+    position: sticky;
+    top: 0;
+    z-index: 90 ;
     #nav-check {
         display: none;
     }
@@ -33,7 +37,7 @@
             text-decoration: none;
             letter-spacing: 1px;
             transition: all ease 0.5s ;
-            padding: 16px 24px;
+            padding: $nav-element-pading;
             &:hover{
                 color: #f09053;
                 background-color: #00000049;
@@ -44,7 +48,7 @@
     }
 }
 
-@include Query(tablet){
+@include Query(mobile){
     .navbar{
         width: 100%;
         text-align: center;
@@ -56,10 +60,10 @@
             
             label {
                 display: inline-block;
-                width: 50px;
-                height: 50px;
-                padding: 13px;
-                margin: 6px;
+                width: 46px;
+                height: 46px;
+                padding: 11px;
+                margin: 4px;
                 &:hover{
                     span{
                         border-top: 2px solid #f09053; 
@@ -78,11 +82,11 @@
             position: absolute;
             display: block;
             width: 100%;
-            background-color: #00000070;
+            background-color: #000000b6;
             height: 0px;
             transition: all 0.3s ease-in;
             overflow-y: hidden;
-            top:64px;
+            top:54px;
             left: 0;
             a{
                 padding: 16px 24px;
@@ -109,13 +113,15 @@
             height: auto;
             text-align: center;
             text-transform: uppercase;
-            text-decoration: none;
             letter-spacing: 1px;
             transition: all ease 1s ;
             padding: 16px 24px;
-            border-bottom: 4px solid #f09053;
-            background-color: #00000049;
+            font-size: medium;
+            border-left: 4px solid #f09053;
+            // border-right: 4px solid #f09053;
 
+            background-color: #00000049;
+            height: 100%;
             &:hover{
                 color: #f09053;
             }
@@ -132,8 +138,97 @@
     }
 }
 
+@include Query(tablet){
+    .navbar{
+        width: 100%;
+        text-align: center;
+        .nav-btn {
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            
+            label {
+                display: inline-block;
+                width: 46px;
+                height: 46px;
+                padding: 11px;
+                margin: 4px;
+                &:hover{
+                    span{
+                        border-top: 2px solid #f09053; 
+                    }
+                }
+                span {
+                    display: block;
+                    width: 25px;
+                    height: 10px;
+                    border-top: 2px solid #aba9b4;
+                    
+                }
+            }
+        }
+        .nav-link{
+            position: absolute;
+            display: block;
+            width: 100%;
+            background-color: #000000b6;
+            height: 0px;
+            transition: all 0.3s ease-in;
+            overflow-y: hidden;
+            top:54px;
+            left: 0;
+            a{
+                padding: 16px 24px;
+                display: block;
+                width: 100%;
+                &:hover{
+                    color: #f09053;
+                    background-color: #00000049;
+                }
+            }
+        }
+        #nav-check:checked ~ .nav-btn{
+            label{
+                background-color: #00000049; 
+                span{
+                    border-top: 2px solid #f09053; 
+                }
+            }
+        }
+        .mobo-header{
+            color: #aba9b4;
+            display: block;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all ease 1s ;
+            padding: 16px 24px;
+            font-size: medium;
+            border-left: 4px solid #f09053;
+            // border-right: 4px solid #f09053;
+
+            background-color: #00000049;
+            height: 100%;
+            &:hover{
+                color: #f09053;
+            }
+        }
+    }
+    .navbar >{
+        #nav-check:checked ~ .nav-link{
+            height: calc(100vh - 50px);
+            overflow-y: auto;
+        }
+        #nav-check:not(checked) ~ .nav-link{
+            height: 0px;
+        }
+    }
+}
 .active-link{
-    border-top: 2px solid #f09053;
+    border-bottom: 4px solid #f09053;
     color: #f09053;
     background-color: #00000049; 
 }

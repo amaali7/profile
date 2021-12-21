@@ -1,0 +1,91 @@
+@import "../styles/mixin.scss";
+@include RoundedHeader;
+@include Typography;
+.info-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    .el {
+      margin: 8px 0;
+      span {
+        color: #fcfcfc;
+      }
+    }
+    .card {
+      position: relative;
+      margin-top: 60px;
+      height: auto;
+      min-width: 42.5rem;
+      min-height: 250px;
+      padding: 30px;
+      padding-top: 60px;
+      border: 1px solid #f08f53;
+      // border-radius: 2rem;
+      background-color: #1e1f31;
+      z-index: 5;
+      .top-box {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 80%;
+        border: 1px solid #f08f53;
+        // border-radius: 1rem;
+        z-index: 6;
+        background-color: inherit;
+        h1 {
+          padding: 8px 14px;
+          color: #f08f53;
+          float: left;
+          font-size: 32px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          width: 100%;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .contact-link {
+      border-bottom: 2px solid #f08f53;
+      padding-left: 1rem;
+      padding-bottom: 0.75rem;
+      text-decoration: wavy;
+      padding-top: 0.75rem;
+      padding-right: 1rem;
+      color: #f08f53;
+      font-size: 24px;
+      font-weight: 300;
+      transition: all ease 0.7s;
+      margin: 10px 0;
+      &:hover {
+        background-color: #f08f53;
+        color: #fcfcfc;
+      }
+    }
+    .contact-links {
+      margin: 40px 0;
+    }
+    .contact-element {
+      display: block;
+      .el {
+        margin: 8px 0;
+        span {
+          color: #fcfcfc;
+        }
+      }
+    }
+  }
+}
