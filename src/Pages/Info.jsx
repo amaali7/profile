@@ -1,12 +1,10 @@
 import React from "react";
-import "../styles/pageDefault.scss";
-import "../styles/Info.scss";
 
 const Info = () => {
   return (
     <section id="Info" className="page-section info-page">
+      <h1 className="rounded-header" style={{width: '300px'}}>Refrences</h1>
       <div className="info">
-        <h1 className="rounded-header">Refrences</h1>
         <div className="card">
           <div className="top-box">
             <h1>Alnadhief Hamed Ahmed Alfedeel</h1>
@@ -14,14 +12,12 @@ const Info = () => {
           <div className="main-box">
             <div className="element">
               <span className="header el">
-                Position :{" "}
-                <span>Assistant Professor </span>
+                Position : <span>Assistant Professor </span>
               </span>
             </div>
             <div className="element">
               <span className="header el">
-                At :{" "}
-                <span>University of Khartoum</span>
+                At : <span>University of Khartoum</span>
               </span>
             </div>
             <div className="element">
@@ -43,14 +39,12 @@ const Info = () => {
           <div className="main-box">
             <div className="element">
               <span className="header el">
-                Position :{" "}
-                <span>Assistant Professor </span>
+                Position : <span>Assistant Professor </span>
               </span>
             </div>
             <div className="element">
               <span className="header el">
-                At :{" "}
-                <span>University of Khartoum</span>
+                At : <span>University of Khartoum</span>
               </span>
             </div>
             <div className="element">
@@ -64,10 +58,10 @@ const Info = () => {
               </span>
             </div>
           </div>
-        </div>T
+        </div>
       </div>
       <div className="contact">
-        <h1 className="rounded-header">Contact</h1>
+        <h1 className="rounded-header" style={{width: '300px'}}>Contact</h1>
         <div className="contact-element">
           <div className="element">
             <span className="header el">
@@ -80,7 +74,7 @@ const Info = () => {
             </span>
           </div>
         </div>
-        <div className="contact-links">
+        <div id='Contact' className="contact-links">
           <a href="#" className="contact-link">
             GitHub
           </a>

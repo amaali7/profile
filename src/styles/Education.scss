@@ -1,20 +1,16 @@
 @import "../styles/mixin.scss";
 .education-page {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    " edui edui edut edut "
-    " edui edui edut edut "
-    " edui edui edut edut "
-    " edui edui edut edut ";
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  // padding: 6rem auto;
+  // min-height: calc(1.1 * 50vw);
   .image-section {
-    display: grid;
-    grid-area: edui;
-    width: 100%;
+    width: 50%;
     img {
-      width: 90%;
-      height: 400px;
+      width: 100%;
+      height: auto;
       display: block;
       place-self: center;
       padding: 6px;
@@ -24,114 +20,70 @@
   }
 
   .text-section {
-    display: grid;
-    grid-area: edut;
-    width: 100%;
+    width: 40%;
     @include CodeSchema;
     .text {
       width: 100%;
       height: auto;
       display: block;
-      place-self: start;
+      justify-self: center;
       color: white;
-      font-size: 20px;
-      h1 {
-        color: #f08f53;
-        float: left;
-        font-size: 48px;
-        font-weight: 200;
-        letter-spacing: 1px;
-        display: block;
-        width: 100%;
-      }
-      h2 {
-        padding-top: 1rem;
-        color: #f8ccb1;
-        float: left;
-        font-size: 42px;
-        font-weight: 100;
-        letter-spacing: 1px;
-        width: 100%;
-        display: block;
-      }
-      h3 {
-        padding-top: 1rem;
-        color: #f8ccb1;
-        float: left;
-        font-size: 36px;
-        font-weight: 300;
-        letter-spacing: 0.7px;
-        width: 100%;
-        display: block;
-      }
-      h6 {
-        display: block;
-        float: left;
-        width: 100%;
-        padding-top: 1rem;
-        font-size: 24px;
-        font-weight: 100;
-        color: #d3d3d3;
-      }
+      font-size: 1.2rem;
     }
   }
 }
 @include Query(mobile) {
   .education-page {
-    grid-template-areas:
-      " edut edut edut edut "
-      " edut edut edut edut "
-      " edui edui edui edui "
-      " edui edui edui edui ";
+    flex-direction: column-reverse;
+    gap:5vh;
+    justify-content: center;
     .image-section {
-      // margin-top: -50%;
+      justify-content: center;
+      width: 90%;
       img {
-        width: 90%;
+        width: 100%;
         height: auto;
       }
+    }
+    .text-section {
+      width: 80%;
+      justify-content: center;
+
     }
   }
 }
 @include Query(tablet) {
   .education-page {
-    grid-template-areas:
-      " edut edut edut edut "
-      " edut edut edut edut "
-      " edui edui edui edui "
-      " edui edui edui edui ";
+    flex-direction: column-reverse;
+    gap:5vh;
+    justify-content: center;
     .image-section {
-      // margin-top: -30%;
+      justify-content: center;
+      width: 80%;
       img {
-        width: 90%;
+        width: 100%;
         height: auto;
       }
+    }
+    .text-section {
+      width: 80%;
+      justify-content: center;
+
     }
   }
 }
 @include Query(smallScreen) {
   .education-page {
-    grid-template-areas:
-      " edui edui edut edut "
-      " edui edui edut edut "
-      " edui edui edut edut "
-      " edui edui edut edut ";
+    font-size: 2rem;
   }
 }
 @include Query(largScreen) {
   .education-page {
-    grid-template-areas:
-      " edui edui edut edut "
-      " edui edui edut edut "
-      " edui edui edut edut "
-      " edui edui edut edut ";
+    font-size: 2rem;
   }
 }
 @include Query(extraLarg) {
   .education-page {
-    grid-template-areas:
-      " edui edui edut edut "
-      " edui edui edut edut "
-      " edui edui edut edut "
-      " edui edui edut edut ";
+    font-size: 2rem;
   }
 }

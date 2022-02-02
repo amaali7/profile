@@ -1,6 +1,9 @@
 @import "../styles/mixin.scss";
 @include RoundedHeader;
 @include Typography;
+.rounded-header{
+  font-size: 1.7rem;
+}
 .skills-page {
   display: flex;
   flex-direction: row-reverse;
@@ -9,7 +12,8 @@
   flex-wrap: wrap;
   .skill {
     border: 2px solid #f08f53;
-    // border-radius: 5rem;
+    border-radius: 5rem;
+    text-align: center;
     padding-left: 1rem;
     padding-bottom: 0.75rem;
     padding-top: 0.75rem;

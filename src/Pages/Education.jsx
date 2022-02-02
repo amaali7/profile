@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import FadeDiv from "../Components/FadeDiv/FadeDiv";
-import "../styles/pageDefault.scss";
-import "../styles/Education.scss";
 import UofkSlide1 from "../images/uofk-slide1.jpg";
 import UofkSlide2 from "../images/uofk-slide2.jpg";
 import UofkSlide3 from "../images/uofk-slide3.jpg";

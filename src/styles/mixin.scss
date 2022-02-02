@@ -5,15 +5,15 @@ $bp: (
   ),
   tablet: (
     min: 481px,
-    max: 768px,
+    max: 820px,
   ),
   smallScreen: (
-    min: 769px,
-    max: 1024px,
+    min: 821px,
+    max: 1440px,
   ),
   largScreen: (
-    min: 1025px,
-    max: 1200px,
+    min: 144px,
+    max: 2440px,
   ),
 );
 @mixin Query($screen) {
@@ -43,10 +43,10 @@ $bp: (
     padding: 8px 10px;
     border: 2px solid #f08f53;
     // border-radius: 3rem;
-    width: 225px;
+    width: 80%;
     margin: 40px auto;
     color: #f08f53;
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
     transition: all ease 0.7s;
@@ -59,12 +59,12 @@ $bp: (
 @mixin Typography {
   .header {
     color: #f08f53;
-    float: left;
+    // float: left;
     font-size: 26px;
     font-weight: 300;
     letter-spacing: 1px;
     display: block;
-    width: 100%;
+    width: auto;
   }
   .span {
     padding-top: 0.5rem;
@@ -102,15 +102,20 @@ $bp: (
     z-index: 5;
     .main-box {
       margin: 2rem;
-      margin-top: 10%;
+      padding-top: 15%;
+      height: auto;
       // padding-top: 15px;
       @include Typography;
     }
     .top-box {
       position: absolute;
-      top: -15%;
+      top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
       height: auto;
       width: 80%;
       border: 1px solid #f08f53;
@@ -118,28 +123,24 @@ $bp: (
       z-index: 6;
       background-color: inherit;
       h1 {
-        padding: 8px 14px;
-        padding-top: 60px;
+        padding: 8px auto;
+        // padding-top: 60px;
         color: #f08f53;
-        float: left;
-        font-size: 32px;
+        // float: left;
+        font-size: 1.7rem;
         font-weight: 300;
         letter-spacing: 1px;
         width: 100%;
         display: block;
         text-align: center;
       }
-      .marg10 {
-        margin: 12px 0px;
-      }
+      // .marg10 {
+      //   margin: 12px 0px;
+      // }
       .logo {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
         height: auto;
         // width: auto;
-        border: 1px solid #f08f53;
+        // border: 1px solid #f08f53;
         // border-radius: 1rem;
         z-index: 6;
         background-color: inherit;

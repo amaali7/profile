@@ -1,234 +1,248 @@
-@import '../../styles/mixin.scss';
-
-$nav-height : 54px;
-$nav-element-pading : 16px;
-.navbar{
-    height: $nav-height;
-    width: 100%;
-    background-color: #00000049;
-    position: sticky;
-    top: 0;
-    z-index: 90 ;
-    #nav-check {
-        display: none;
-    }
-    .nav-btn{
-        display: none;
-    }
-    .mobo-header{
-        position: absolute;
-        overflow: hidden;
-        height: 0px;
-        top: 0;
-        left: 0;
-    }
-    .nav-link{
-        display: inline;
-        float: right;
-        font-size: 18px;
-        @include ClearFix; 
-        width: 100%;   
-        a{
-            width: calc(100% /5);
-            color: #aba9b4;
-            display: inline-block;
-            text-align: center;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: 1px;
-            transition: all ease 0.5s ;
-            padding: $nav-element-pading;
-            &:hover{
-                color: #f09053;
-                background-color: #00000049;
-                border-bottom: 4px solid #f09053;
-            }
-        }
-        
-    }
+@import "../../styles/mixin.scss";
+.link {
+  //   border-bottom: 4px solid #f09053;
+  color: #ffffff;
+//   background-color: #000000;
 }
-
-@include Query(mobile){
-    .navbar{
-        width: 100%;
-        text-align: center;
-        .nav-btn {
-            display: inline-block;
-            position: absolute;
-            right: 0px;
-            top: 0px;
-            
-            label {
-                display: inline-block;
-                width: 46px;
-                height: 46px;
-                padding: 11px;
-                margin: 4px;
-                &:hover{
-                    span{
-                        border-top: 2px solid #f09053; 
-                    }
-                }
-                span {
-                    display: block;
-                    width: 25px;
-                    height: 10px;
-                    border-top: 2px solid #aba9b4;
-                    
-                }
-            }
-        }
-        .nav-link{
-            position: absolute;
-            display: block;
-            width: 100%;
-            background-color: #000000b6;
-            height: 0px;
-            transition: all 0.3s ease-in;
-            overflow-y: hidden;
-            top:54px;
-            left: 0;
-            a{
-                padding: 16px 24px;
-                display: block;
-                width: 100%;
-                &:hover{
-                    color: #f09053;
-                    background-color: #00000049;
-                }
-            }
-        }
-        #nav-check:checked ~ .nav-btn{
-            label{
-                background-color: #00000049; 
-                span{
-                    border-top: 2px solid #f09053; 
-                }
-            }
-        }
-        .mobo-header{
-            color: #aba9b4;
-            display: block;
-            width: 100%;
-            height: auto;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all ease 1s ;
-            padding: 16px 24px;
-            font-size: medium;
-            border-left: 4px solid #f09053;
-            // border-right: 4px solid #f09053;
-
-            background-color: #00000049;
-            height: 100%;
-            &:hover{
-                color: #f09053;
-            }
-        }
-    }
-    .navbar >{
-        #nav-check:checked ~ .nav-link{
-            height: calc(100vh - 50px);
-            overflow-y: auto;
-        }
-        #nav-check:not(checked) ~ .nav-link{
-            height: 0px;
-        }
-    }
-}
-
-@include Query(tablet){
-    .navbar{
-        width: 100%;
-        text-align: center;
-        .nav-btn {
-            display: inline-block;
-            position: absolute;
-            right: 0px;
-            top: 0px;
-            
-            label {
-                display: inline-block;
-                width: 46px;
-                height: 46px;
-                padding: 11px;
-                margin: 4px;
-                &:hover{
-                    span{
-                        border-top: 2px solid #f09053; 
-                    }
-                }
-                span {
-                    display: block;
-                    width: 25px;
-                    height: 10px;
-                    border-top: 2px solid #aba9b4;
-                    
-                }
-            }
-        }
-        .nav-link{
-            position: absolute;
-            display: block;
-            width: 100%;
-            background-color: #000000b6;
-            height: 0px;
-            transition: all 0.3s ease-in;
-            overflow-y: hidden;
-            top:54px;
-            left: 0;
-            a{
-                padding: 16px 24px;
-                display: block;
-                width: 100%;
-                &:hover{
-                    color: #f09053;
-                    background-color: #00000049;
-                }
-            }
-        }
-        #nav-check:checked ~ .nav-btn{
-            label{
-                background-color: #00000049; 
-                span{
-                    border-top: 2px solid #f09053; 
-                }
-            }
-        }
-        .mobo-header{
-            color: #aba9b4;
-            display: block;
-            width: 100%;
-            height: auto;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all ease 1s ;
-            padding: 16px 24px;
-            font-size: medium;
-            border-left: 4px solid #f09053;
-            // border-right: 4px solid #f09053;
-
-            background-color: #00000049;
-            height: 100%;
-            &:hover{
-                color: #f09053;
-            }
-        }
-    }
-    .navbar >{
-        #nav-check:checked ~ .nav-link{
-            height: calc(100vh - 50px);
-            overflow-y: auto;
-        }
-        #nav-check:not(checked) ~ .nav-link{
-            height: 0px;
-        }
-    }
-}
-.active-link{
-    border-bottom: 4px solid #f09053;
+.logo{
+    display: inline-block;
+    font-size: 1rem;
     color: #f09053;
-    background-color: #00000049; 
+    font-weight: 700;
+    padding: 16px 6px;
+
+}
+@include CodeSchema;
+.active-link {
+  //   border-bottom: 4px solid #f09053;
+  color: #f09053;
+//   background-color: #1e1f31;
+}
+$nav-height: 54px;
+$nav-element-pading: 16px 6px;
+.navbar {
+  height: $nav-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  background-color: #1e1f31;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  #nav-check {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .mobo-header {
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    top: 0;
+    left: 0;
+  }
+  .nav-link {
+    display: inline;
+    float: right;
+    // margin-left: 50%;
+    font-size: 1.1rem;
+    @include ClearFix;
+    width: auto;
+    cursor: pointer;
+    a {
+      width: auto;
+    //   color: hsl(251, 19%, 88%);
+      display: inline-block;
+      text-align: center;
+      // text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: all ease 0.5s;
+      padding: $nav-element-pading;
+      &:hover {
+        color: #f09053;
+      }
+    }
+  }
+}
+
+@include Query(mobile) {
+  .navbar {
+    width: 100%;
+    // text-align: center;
+    .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+
+      label {
+        display: inline-block;
+        width: 46px;
+        height: 46px;
+        padding: 11px;
+        margin: 4px;
+        &:hover {
+          span {
+            border-top: 2px solid #f09053;
+          }
+        }
+        span {
+          display: block;
+          width: 25px;
+          height: 10px;
+          border-top: 0.125rem solid #aba9b4;
+        }
+      }
+    }
+    .nav-link {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #000000b6;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 54px;
+      left: 0;
+      a {
+        padding: 16px 24px;
+        display: block;
+        width: 100%;
+        &:hover {
+          color: #f09053;
+          background-color: #00000049;
+        }
+      }
+    }
+    #nav-check:checked ~ .nav-btn {
+      label {
+        background-color: #00000049;
+        span {
+          border-top: 2px solid #f09053;
+        }
+      }
+    }
+    .mobo-header {
+      color: #aba9b4;
+      display: block;
+      width: 100%;
+      height: auto;
+      // text-align: center;
+      // text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all ease 1s;
+      padding: 16px 24px;
+      font-size: medium;
+      //   border-left: 4px solid #f09053;
+      // border-right: 4px solid #f09053;
+
+      background-color: #00000049;
+      height: 100%;
+      &:hover {
+        color: #f09053;
+      }
+    }
+  }
+  .navbar > {
+    #nav-check:checked ~ .nav-link {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+    #nav-check:not(checked) ~ .nav-link {
+      height: 0px;
+    }
+  }
+}
+
+@include Query(tablet) {
+  .navbar {
+    width: 100%;
+    // text-align: center;
+    .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+
+      label {
+        display: inline-block;
+        width: 46px;
+        height: 46px;
+        padding: 11px;
+        margin: 4px;
+        &:hover {
+          span {
+            border-top: 2px solid #f09053;
+          }
+        }
+        span {
+          display: block;
+          width: 25px;
+          height: 10px;
+          border-top: 2px solid #aba9b4;
+        }
+      }
+    }
+    .nav-link {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #000000b6;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 54px;
+      left: 0;
+      a {
+        padding: 16px 24px;
+        display: block;
+        width: 100%;
+        &:hover {
+          color: #f09053;
+          background-color: #00000049;
+        }
+      }
+    }
+    #nav-check:checked ~ .nav-btn {
+      label {
+        background-color: #00000049;
+        span {
+          border-top: 2px solid #f09053;
+        }
+      }
+    }
+    .mobo-header {
+      color: #aba9b4;
+      display: block;
+      width: 100%;
+      height: auto;
+      // text-align: center;
+      // text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all ease 1s;
+      padding: 16px 24px;
+      font-size: medium;
+      border-left: 4px solid #f09053;
+      // border-right: 4px solid #f09053;
+
+      background-color: #00000049;
+      height: 100%;
+      &:hover {
+        color: #f09053;
+      }
+    }
+  }
+  .navbar > {
+    #nav-check:checked ~ .nav-link {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+    #nav-check:not(checked) ~ .nav-link {
+      height: 0px;
+    }
+  }
 }
