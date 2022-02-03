@@ -11,51 +11,54 @@ $images-hight: 50vw;
     // width: 40vw;
     flex-basis: (100%)/2.8;
     // padding: 50px;
-    margin-left: 60px;
-    padding-right: 60px;
+    // margin-left: 60px;
+    // padding-right: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    p {
-      margin-top: 20%;
-      font-size: 1.2rem;
-      // font-weight: 400;
-      //   line-height: 2vw;
-      color: rgb(255, 255, 255);
-      tab-size: 4;
-    }
-    @include CodeSchema;
-    a {
-      margin-bottom: 20%;
-      position: relative;
-      display: inline-block;
-      font-size: 1rem;
-      text-transform: uppercase;
-      color: #fff;
-      text-decoration: none;
-      padding: 0.8rem;
-      letter-spacing: 1px;
-      font-weight: 600;
-      margin-top: 60px;
-      width: 11rem;
-      height: 3rem;
-      text-align: center;
-      &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 3rem;
-        height: 3rem;
-        border-radius: 3rem;
-        background-color: #f09053;
-        z-index: -1;
-        margin-left: -3px;
-        transition: all ease 0.5s;
+    .text-area {
+      width: 100%;
+      p {
+        margin-top: 20%;
+        font-size: 1.2rem;
+        // font-weight: 400;
+        //   line-height: 2vw;
+        color: rgb(255, 255, 255);
+        tab-size: 4;
       }
-      &:hover:before {
-        width: 100%;
-        // border-radius: 0;
+      @include CodeSchema;
+      a {
+        margin-bottom: 20%;
+        position: relative;
+        display: inline-block;
+        font-size: 0.5rem;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.8rem;
+        // letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 60px;
+        width: 11rem;
+        height: 3rem;
+        text-align: center;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 3rem;
+          background-color: #f09053;
+          z-index: -1;
+          margin-left: -3px;
+          transition: all ease 0.5s;
+        }
+        &:hover:before {
+          width: 100%;
+          // border-radius: 0;
+        }
       }
     }
   }
@@ -152,19 +155,22 @@ $images-hight: 50vw;
 @include Query(mobile) {
   .home-page {
     .text {
-      flex-basis: 100%;
+      flex-basis: 90%;
       width: 90%;
       letter-spacing: 0.3px;
-      p {
-        font-size: 4vw;
-      }
-      a {
-        font-size: 2.5vw;
-        width: 25vw;
-        height: 5vw;
-        &::before{
-          height: 7vw;
-          width: 7vw;
+      .text-area {
+        width: 100%;
+        p {
+          font-size: 4vw;
+        }
+        a {
+          font-size: 2.5vw;
+          width: 25vw;
+          height: 5vw;
+          &::before {
+            height: 7vw;
+            width: 7vw;
+          }
         }
       }
     }
@@ -197,16 +203,19 @@ $images-hight: 50vw;
       flex-basis: 100%;
       width: 90%;
       margin-top: 2rem;
-      p {
-        font-size: 3vw;
-      }
-      a {
-        font-size: 2.5vw;
-        width: 25vw;
-        height: 5vw;
-        &::before{
-          height: 7vw;
-          width: 7vw;
+      .text-area {
+        width: 100%;
+        p {
+          font-size: 3vw;
+        }
+        a {
+          font-size: 2.5vw;
+          width: 25vw;
+          height: 5vw;
+          &::before {
+            height: 7vw;
+            width: 7vw;
+          }
         }
       }
     }
@@ -234,22 +243,25 @@ $images-hight: 50vw;
   .home-page {
     .text {
       width: 45vw;
-      p {
-        font-size: 1.8vw;
-      }
-      a {
-        font-size: 2vw;
-        width: 20vw;
-        height: 5vw;
-        &::before{
-          height: 5.5vw;
-          width: 5.5vw;
+      .text-area {
+        width: 100%;
+        p {
+          font-size: 1.8vw;
+        }
+        a {
+          font-size: 2vw;
+          width: 20vw;
+          height: 5vw;
+          &::before {
+            height: 5.5vw;
+            width: 5.5vw;
+          }
         }
       }
     }
-    .images-container{
+    .images-container {
       width: 50vw;
-        .images {
+      .images {
         width: 40vw;
         height: 40vw;
       }

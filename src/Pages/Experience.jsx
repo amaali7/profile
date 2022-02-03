@@ -16,7 +16,7 @@ const Experience = () => {
         <div className="card">
           <div className="top-box">
             <div className="logo">
-              <img src={Water} alt="UofK" height="110px" className="mada" />
+              <img src={Water} alt="UofK"  className="mada" />
             </div>
             <h1 className="marg10">Web App </h1>
           </div>

@@ -30,7 +30,7 @@ const Home = () => {
         </div>
       </div>
       <div className="text">
-        <div>
+        <div className="text-area">
           <p>
             <span className="span-4">#</span>
             <span className="span-1">include </span>

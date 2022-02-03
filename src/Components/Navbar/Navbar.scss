@@ -4,13 +4,15 @@
   color: #ffffff;
 //   background-color: #000000;
 }
-.logo{
+.nav-logo{
     display: inline-block;
     font-size: 1rem;
     color: #f09053;
     font-weight: 700;
     padding: 16px 6px;
-
+    a{
+      text-decoration: none;
+    }
 }
 @include CodeSchema;
 .active-link {
