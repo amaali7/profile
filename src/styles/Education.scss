@@ -4,8 +4,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  // padding: 6rem auto;
-  // min-height: calc(1.1 * 50vw);
   .image-section {
     width: 50%;
     img {
@@ -28,7 +26,7 @@
       display: block;
       justify-self: center;
       color: white;
-      font-size: 1.2rem;
+      font-size: 2vw;
     }
   }
 }
@@ -46,9 +44,11 @@
       }
     }
     .text-section {
-      width: 80%;
+      width: 85vw;
       justify-content: center;
-
+      .text {
+        font-size: 4vw;
+      }
     }
   }
 }
@@ -68,7 +68,9 @@
     .text-section {
       width: 80%;
       justify-content: center;
-
+      .text {
+        font-size: 4vw;
+      }
     }
   }
 }
