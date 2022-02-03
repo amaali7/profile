@@ -46,7 +46,6 @@ $bp: (
     text-align: center;
     padding: 8px 10px;
     border: 2px solid #f08f53;
-    // border-radius: 3rem;
     width: 80%;
     margin: 40px auto;
     color: #f08f53;
@@ -64,9 +63,9 @@ $bp: (
   .header {
     color: #f08f53;
     // float: left;
-    font-size: 26px;
+    font-size: 1.3rem;
     font-weight: 300;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     display: block;
     width: auto;
   }
@@ -74,9 +73,9 @@ $bp: (
     padding-top: 0.5rem;
     color: #f8ccb1;
     float: left;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 100;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     width: 100%;
     display: block;
   }
@@ -84,9 +83,9 @@ $bp: (
     padding-top: 0.5rem;
     color: #fcfcfc;
     float: left;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 300;
-    letter-spacing: 0.7px;
+    // letter-spacing: 0.7px;
     width: 100%;
     display: block;
   }
@@ -96,19 +95,16 @@ $bp: (
   .card {
     position: relative;
     margin-top: 180px;
-    // padding-right: 50px;
     height: auto;
     padding-bottom: 20px;
     width: 45%;
     border: 1px solid #f08f53;
-    // border-radius: 2rem;
     background-color: #1e1f31;
     z-index: 5;
     .main-box {
       margin: 2rem;
       padding-top: 15%;
       height: auto;
-      // padding-top: 15px;
       @include Typography;
     }
     .top-box {
@@ -121,36 +117,28 @@ $bp: (
       justify-content: space-around;
       align-items: center;
       height: auto;
-      width: 80%;
+      width: 90%;
       border: 1px solid #f08f53;
       // border-radius: 1rem;
       z-index: 6;
       background-color: inherit;
       h1 {
         padding: 8px auto;
-        // padding-top: 60px;
         color: #f08f53;
-        // float: left;
-        font-size: 4vw;
+        font-size: 1.5rem;
         font-weight: 300;
-        letter-spacing: 1px;
+        // letter-spacing: 1px;
         width: 100%;
         display: block;
         text-align: center;
       }
-      // .marg10 {
-      //   margin: 12px 0px;
-      // }
       .logo {
         height: auto;
-        // width: auto;
-        // border: 1px solid #f08f53;
-        // border-radius: 1rem;
         z-index: 6;
         background-color: inherit;
         img {
           padding: 5px 0px;
-          width: 62px;
+          width: 3rem;
           height: auto;
           margin: auto;
           display: block;

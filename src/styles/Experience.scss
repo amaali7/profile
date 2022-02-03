@@ -58,19 +58,19 @@
 }
 @include Query(smallScreen) {
   .experience-page {
-    .container {
-      flex-direction: column;
+    // .container {
+    //   flex-direction: ro;
 
-      .card {
-        width: 100%;
-        height: auto;
-        padding-bottom: 20px;
-        padding-top: -20px;
-      }
-      .mas {
-        padding-top: 10px;
-      }
-    }
+    //   .card {
+    //     width: 100%;
+    //     height: auto;
+    //     padding-bottom: 20px;
+    //     padding-top: -20px;
+    //   }
+    //   .mas {
+    //     padding-top: 10px;
+    //   }
+    // }
   }
 }
 // @include Query(largScreen){
