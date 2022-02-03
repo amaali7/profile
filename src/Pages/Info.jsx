@@ -75,16 +75,16 @@ const Info = () => {
           </div>
         </div>
         <div id='Contact' className="contact-links">
-          <a href="#" className="contact-link">
+          <a href="https://github.com/amaali7" target="_blank" rel="noopener noreferrer" className="contact-link">
             GitHub
           </a>
-          <a href="#" className="contact-link">
+          <a href="https://www.linkedin.com/in/abdallah-adam-489aab153" target="_blank" rel="noopener noreferrer" className="contact-link">
             Linked In
           </a>
-          <a href="#" className="contact-link">
+          <a href="https://www.facebook.com/amaali17/" target="_blank" rel="noopener noreferrer" className="contact-link">
             Facebook
           </a>
-          <a href="#" className="contact-link">
+          <a href="https://t.me/Amaali7" target="_blank" rel="noopener noreferrer" className="contact-link">
             Telegram
           </a>
         </div>
