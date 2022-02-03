@@ -12,9 +12,13 @@ $bp: (
     max: 1440px,
   ),
   largScreen: (
-    min: 144px,
+    min: 1440px,
     max: 2440px,
   ),
+  extraLarg: (
+    min: 2441px,
+    max: 3440px,
+  )
 );
 @mixin Query($screen) {
   @each $key, $value in $bp {
