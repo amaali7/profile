@@ -18,7 +18,7 @@
       position: relative;
       margin-top: 60px;
       height: auto;
-      width: clamp(350px, 60%, 90%);
+      width: clamp(80vw, 60%, 90%);
       min-height: 250px;
       padding: 30px;
       padding-top: 60px;
@@ -34,14 +34,13 @@
         height: auto;
         width: 80%;
         border: 2px solid #f08f53;
-        // border-radius: 1rem;
         z-index: 6;
         background-color: inherit;
         h1 {
           padding: 8px 14px;
           color: #f08f53;
           float: left;
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           font-weight: 300;
           letter-spacing: 1px;
           width: 100%;
@@ -55,7 +54,7 @@
       margin: 8px 0;
       span {
         color: #fcfcfc;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   }
@@ -66,14 +65,12 @@
     gap: 20px;
     .contact-link {
       border-bottom: 2px solid #f08f53;
-      padding-left: 1rem;
-      padding-bottom: 0.75rem;
+      padding: 0.75rem 0.5rem;
       text-decoration: wavy;
-      padding-top: 0.75rem;
-      padding-right: 1rem;
-      color: #f08f53;
-      font-size: 24px;
+      font-size: 1.2rem;
       font-weight: 300;
+      color: #f08f53;
+      
       transition: all ease 0.7s;
       margin: 10px 0;
       &:hover {
@@ -82,7 +79,8 @@
       }
     }
     .contact-links {
-      margin: 40px auto;
+      margin: 2rem auto;
+      
     }
     .contact-element {
       // display: block;
