@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.8e71a991.css",
-    "main.js": "/profile/static/js/main.60e4c7bd.js",
+    "main.js": "/profile/static/js/main.30712e3c.js",
     "static/js/787.00d4da7d.chunk.js": "/profile/static/js/787.00d4da7d.chunk.js",
     "static/media/pi.jpg": "/profile/static/media/pi.61346d789da6b21dc59d.jpg",
+    "static/media/STEM.png": "/profile/static/media/STEM.fee849f3a2821629fb6c.png",
     "static/media/HTML.png": "/profile/static/media/HTML.0ff377620db6060a5517.png",
     "static/media/uofk-slide1.jpg": "/profile/static/media/uofk-slide1.6d4626187b356540f9d8.jpg",
     "static/media/uofk-slide3.jpg": "/profile/static/media/uofk-slide3.c76dfd7296edbcf29903.jpg",
@@ -16,18 +17,17 @@
     "static/media/uofk.png": "/profile/static/media/uofk.f86a77064cdc67995e6f.png",
     "static/media/C.png": "/profile/static/media/C.89c966eb79eb567d6a41.png",
     "static/media/C++.png": "/profile/static/media/C++.e814f55e37f33fecca71.png",
-    "static/media/STEM.webp": "/profile/static/media/STEM.5d9dd0647c7ab5830be5.webp",
     "static/media/Python.png": "/profile/static/media/Python.461c1effab163e472fc7.png",
     "static/media/Tex.png": "/profile/static/media/Tex.636e90de6398468b1028.png",
     "static/media/water.png": "/profile/static/media/water.9505178ec01ad9363784.png",
     "static/media/Bash.png": "/profile/static/media/Bash.fb26e2df76f5535e4fad.png",
     "index.html": "/profile/index.html",
     "main.8e71a991.css.map": "/profile/static/css/main.8e71a991.css.map",
-    "main.60e4c7bd.js.map": "/profile/static/js/main.60e4c7bd.js.map",
+    "main.30712e3c.js.map": "/profile/static/js/main.30712e3c.js.map",
     "787.00d4da7d.chunk.js.map": "/profile/static/js/787.00d4da7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e71a991.css",
-    "static/js/main.60e4c7bd.js"
+    "static/js/main.30712e3c.js"
   ]
 }
