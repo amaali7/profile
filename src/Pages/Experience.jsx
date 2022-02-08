@@ -120,7 +120,7 @@ const Experience = () => {
             <h1 className="marg10">STEM Education Sudan </h1>
           </div>
           <div className="main-box">
-            <h1 className="header">Department Of Physics</h1>
+            <h1 className="header">Electronics and Programing</h1>
             <h6 className="span">2017 - 2020</h6>
             <p className="body">
               Educate children bisc electonics and simple embbeded like Arduino,
