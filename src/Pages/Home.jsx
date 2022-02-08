@@ -26,7 +26,7 @@ const Home = () => {
             <img src={CppLang} alt="C++ Lang" />
             <img src={Python} alt="Python" />
           </div>
-          <img class="personal-image" src={PersonalImage} alt="" />
+          <img className="personal-image" src={PersonalImage} alt="" />
         </div>
       </div>
       <div className="text">

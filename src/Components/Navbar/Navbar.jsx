@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="nav-logo"><a href="#Home"><span className="span-4">class</span> <span className="span-1">Profile()</span></a></div>
       </div>
       <div className="nav-btn">
-        <label for="nav-check">
+        <label htmlFor="nav-check">
           <span></span>
           <span></span>
           <span></span>
