@@ -72,8 +72,8 @@ const Info = () => {
         <div className="contact-element">
           <div className="element">
             <span className="header el">
-              Phone : <span>+249994747217</span><br />
-              {WhiteSpace(6)}: <span>+249121452356</span>
+              Phone : <span>+249-994-747-217</span><br />
+              {WhiteSpace(6)}: <span>+249-121-452-356</span>
             </span>
           </div>{" "}
           <div className="element">
@@ -86,7 +86,7 @@ const Info = () => {
         <div className="contact-element">
           <div className="element">
             <span className="header el">
-              Phone : <span>+201122029375</span>
+              Phone : <span>+20-112-202-9375</span>
             </span>
           </div>{" "}
           <div className="element">
