@@ -11,21 +11,20 @@ const Education = () => {
   const imageList = [UofkSlide1, UofkSlide2, UofkSlide3];
   useEffect(() => {
     const interval = setInterval(() => {
-      let states = image;
-      if (image == 2) {
+      if (image === 2) {
         setImage(0);
       } else {
-        setImage(states + 1);
+        setImage(image + 1);
       }
       console.log(image);
     }, 5000);
-    // return () => clearInterval(interval);
-  }, []);
+    return () => clearInterval(interval);
+  }, [image]);
   return (
     <section id="Education" className="page-section education-page">
-      <FadeDiv className="image-section">
+      <div className="image-section">
         <img src={imageList[image]} alt="UofK  1" />
-      </FadeDiv>
+      </div>
       <div className="text-section">
         <div className="text">
         {/* <span className="span-4">"University Of Khartoum"</span> */}
