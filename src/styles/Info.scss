@@ -61,26 +61,24 @@
   .contact {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     gap: 20px;
-    .contact-link {
-      border-bottom: 2px solid #f08f53;
-      padding: 0.75rem 0.5rem;
-      text-decoration: wavy;
-      font-size: 1.2rem;
-      font-weight: 300;
-      color: #f08f53;
-      
-      transition: all ease 0.7s;
-      margin: 10px 0;
-      &:hover {
-        background-color: #f08f53;
-        color: #fcfcfc;
-      }
-    }
+
     .contact-links {
       margin: 2rem auto;
-      
+      .contact-link {
+        border-bottom: 2px solid #f08f53;
+        padding: 0.875rem 0.45rem;
+        text-decoration: wavy;
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: #f08f53;
+        transition: all ease 0.7s;
+        &:hover {
+          background-color: #f08f53;
+          color: #fcfcfc;
+        }
+      }
     }
     .contact-element {
       // display: block;

@@ -1,5 +1,12 @@
 import React from "react";
-
+// const TabChar = "\u00A0" + "\u00A0" + "\u00A0" + "\u00A0";
+const WhiteSpace = (num)=>{
+  let whitespace = '';
+  for (let i = 0; i < num; i++) {
+    whitespace +=  "\u00A0" ;   
+  }
+  return whitespace;
+}
 const Info = () => {
   return (
     <section id="Info" className="page-section info-page">
@@ -65,12 +72,14 @@ const Info = () => {
         <div className="contact-element">
           <div className="element">
             <span className="header el">
-              Phone : <span>+249994747217</span> <span>+249121452356</span>
+              Phone : <span>+249994747217</span><br />
+              {WhiteSpace(6)}: <span>+249121452356</span>
             </span>
           </div>{" "}
           <div className="element">
             <span className="header el">
-              Address : <span>Sudan, Khartoum, Adbabiker north</span>
+              Address : <span>Sudan, Khartoum, </span> <br /> 
+              {WhiteSpace(10)}<span>Adbabiker north</span>
             </span>
           </div>
         </div>
@@ -91,7 +100,7 @@ const Info = () => {
             GitHub
           </a>
           <a href="https://www.linkedin.com/in/abdallah-adam-489aab153" target="_blank" rel="noopener noreferrer" className="contact-link">
-            Linked In
+            LinkedIn
           </a>
           <a href="https://www.facebook.com/amaali17/" target="_blank" rel="noopener noreferrer" className="contact-link">
             Facebook
