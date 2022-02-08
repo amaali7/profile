@@ -65,6 +65,18 @@ const Info = () => {
         <div className="contact-element">
           <div className="element">
             <span className="header el">
+              Phone : <span>+249994747217</span> <span>+249121452356</span>
+            </span>
+          </div>{" "}
+          <div className="element">
+            <span className="header el">
+              Address : <span>Sudan, Khartoum, Adbabiker north</span>
+            </span>
+          </div>
+        </div>
+        <div className="contact-element">
+          <div className="element">
+            <span className="header el">
               Phone : <span>+201122029375</span>
             </span>
           </div>{" "}
