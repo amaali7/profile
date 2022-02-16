@@ -8,9 +8,12 @@
   justify-content: space-evenly;
   align-content: space-around;
   flex-wrap: wrap;
-  .rounded-header{
+  .rounded-header {
     font-size: 1.5rem;
     width: clamp(90%, 70%, 50%);
+  }
+  .conta {
+    width: (90%/4);
   }
   .skill {
     border: 2px solid #f08f53;
@@ -22,9 +25,26 @@
     font-weight: 300;
     transition: all ease 0.7s;
     margin: 10px 0;
+    width: (100%);
     &:hover {
       background-color: #f08f53;
       color: #fcfcfc;
+    }
+  }
+}
+
+@include Query(mobile) {
+  .skills-page {
+    .conta {
+      width: (90%);
+    }
+  }
+}
+
+@include Query(tablet) {
+  .skills-page {
+    .conta {
+      width: (45%);
     }
   }
 }
