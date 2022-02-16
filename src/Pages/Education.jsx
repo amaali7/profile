@@ -16,14 +16,13 @@ const Education = () => {
       } else {
         setImage(image + 1);
       }
-      console.log(image);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [image]);
   return (
     <section id="Education" className="page-section education-page">
       <div className="image-section">
-        <img src={imageList[image]} alt="UofK  1" />
+        <img src={imageList[image]} className='uofk-images' alt="UofK  1" />
       </div>
       <div className="text-section">
         <div className="text">
