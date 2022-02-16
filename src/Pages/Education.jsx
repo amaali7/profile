@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import FadeDiv from "../Components/FadeDiv/FadeDiv";
 import UofkSlide1 from "../images/uofk-slide1.jpg";
 import UofkSlide2 from "../images/uofk-slide2.jpg";
 import UofkSlide3 from "../images/uofk-slide3.jpg";
+
 
 const TabChar = "\u00A0" + "\u00A0" + "\u00A0" + "\u00A0";
 
