@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.dcb8a772.css",
-    "main.js": "/profile/static/js/main.039e41bc.js",
+    "main.js": "/profile/static/js/main.352d747e.js",
     "static/js/787.00d4da7d.chunk.js": "/profile/static/js/787.00d4da7d.chunk.js",
     "static/media/pi.jpg": "/profile/static/media/pi.61346d789da6b21dc59d.jpg",
     "static/media/STEM.png": "/profile/static/media/STEM.fee849f3a2821629fb6c.png",
     "static/media/HTML.png": "/profile/static/media/HTML.0ff377620db6060a5517.png",
-    "static/media/uofk-slide1.jpg": "/profile/static/media/uofk-slide1.6d4626187b356540f9d8.jpg",
-    "static/media/uofk-slide3.jpg": "/profile/static/media/uofk-slide3.c76dfd7296edbcf29903.jpg",
-    "static/media/uofk-slide2.jpg": "/profile/static/media/uofk-slide2.dc0ad20845a9bc895f1f.jpg",
+    "static/media/uofk-slide1.jpg": "/profile/static/media/uofk-slide1.57cce8ab34c274383781.jpg",
+    "static/media/uofk-slide3.jpg": "/profile/static/media/uofk-slide3.e0967233f789c0bee155.jpg",
+    "static/media/uofk-slide2.jpg": "/profile/static/media/uofk-slide2.98d3d1a268664e5aa231.jpg",
     "static/media/nileU.png": "/profile/static/media/nileU.7d0aa75fe5137a110afc.png",
     "static/media/uv.png": "/profile/static/media/uv.bb6e80d78d398dce70a5.png",
     "static/media/Javascript.png": "/profile/static/media/Javascript.7afb7b361d1d00c6c54d.png",
@@ -23,11 +23,11 @@
     "static/media/Bash.png": "/profile/static/media/Bash.fb26e2df76f5535e4fad.png",
     "index.html": "/profile/index.html",
     "main.dcb8a772.css.map": "/profile/static/css/main.dcb8a772.css.map",
-    "main.039e41bc.js.map": "/profile/static/js/main.039e41bc.js.map",
+    "main.352d747e.js.map": "/profile/static/js/main.352d747e.js.map",
     "787.00d4da7d.chunk.js.map": "/profile/static/js/787.00d4da7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcb8a772.css",
-    "static/js/main.039e41bc.js"
+    "static/js/main.352d747e.js"
   ]
 }
