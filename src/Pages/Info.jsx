@@ -91,7 +91,7 @@ const Info = () => {
           </div>{" "}
           <div className="element">
             <span className="header el">
-              Address : <span>Egypt, Cairo, Badr</span>
+              Address : <span>Egypt, Cairo, Al Maadi </span>
             </span>
           </div>
         </div>
