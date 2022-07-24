@@ -86,7 +86,7 @@ const Info = () => {
         <div className="contact-element">
           <div className="element">
             <span className="header el">
-              Phone : <span>+20-112-202-9375</span>
+              Phone : <span>+20-115-149-6799</span>
             </span>
           </div>{" "}
           <div className="element">
