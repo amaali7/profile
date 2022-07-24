@@ -20,7 +20,7 @@ const Experience = () => {
               <img src={Water} alt="UofK" className="mada" />
             </div>
             <h1 className="marg10">
-              <a href="http://github.com/amaali7/WHO" className="linko">Web App</a>
+              <a href="http://github.com/amaali7/WHO" className="linko" target="_blank">Web App</a>
             </h1>
           </div>
           <div className="main-box">
@@ -41,7 +41,7 @@ const Experience = () => {
               <img src={UvLamp} alt="UofK" height="110px" className="mada" />
             </div>
             <h1 className="marg10">
-              <a href="https://github.com/amaali7/UV_Final" className="linko">Health Care</a>
+              <a href="https://github.com/amaali7/UV_Final" className="linko" target="_blank">Health Care</a>
             </h1>
           </div>
           <div className="main-box">
@@ -60,7 +60,7 @@ const Experience = () => {
               <img src={SmsProxy} alt="UofK" className="mada" />
             </div>
             <h1 className="marg10">
-              <a href="https://github.com/amaali7/ESP32-SMS" className="linko">Communications Technology</a>
+              <a href="https://github.com/amaali7/ESP32-SMS" className="linko" target="_blank">Communications Technology</a>
             </h1>
           </div>
           <div className="main-box">
