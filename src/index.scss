@@ -3,13 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import "./styles/mixin.scss";
 
 body {
-  margin: 0;
   font-family: 'Victor Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1e1f31;
+  background-color: $deep-blue;
 }
 
 html{
@@ -19,8 +19,13 @@ html{
   scrollbar-width: none;  /* Firefox */
 }
 
+.page-section {
+  width: 100%;
+  min-height: calc(100vh);
+}
+
+
 @import './Components/Navbar/Navbar.scss';
-@import './styles/pageDefault.scss';
 @import './styles/Home.scss';
 @import './styles/Education.scss';
 @import './styles/Experience.scss';

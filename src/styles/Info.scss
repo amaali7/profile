@@ -1,4 +1,3 @@
-@import "../styles/mixin.scss";
 @include RoundedHeader;
 @include Typography;
 .info-page {
@@ -22,9 +21,9 @@
       min-height: 250px;
       padding: 30px;
       padding-top: 60px;
-      border: 2px solid #f08f53;
+      border: 2px solid $orang;
       // border-radius: 2rem;
-      background-color: #1e1f31;
+      background-color: $deep-blue;
       z-index: 5;
       .top-box {
         position: absolute;
@@ -33,12 +32,12 @@
         transform: translate(-50%, -50%);
         height: auto;
         width: 80%;
-        border: 2px solid #f08f53;
+        border: 2px solid $orang;
         z-index: 6;
         background-color: inherit;
         h1 {
           padding: 8px 14px;
-          color: #f08f53;
+          color: $orang;
           float: left;
           font-size: 1.5rem;
           font-weight: 300;
@@ -53,7 +52,7 @@
       font-size: 1rem;
       margin: 8px 0;
       span {
-        color: #fcfcfc;
+        color: $white;
         font-size: 1rem;
       }
     }
@@ -67,16 +66,16 @@
     .contact-links {
       margin: 2rem auto;
       .contact-link {
-        border-bottom: 2px solid #f08f53;
+        border-bottom: 2px solid $orang;
         padding: 0.875rem 0.45rem;
         text-decoration: wavy;
         font-size: 1.25rem;
         font-weight: 300;
-        color: #f08f53;
+        color: $orang;
         transition: all ease 0.7s;
         &:hover {
-          background-color: #f08f53;
-          color: #fcfcfc;
+          background-color: $orang;
+          color: $white;
         }
       }
     }
@@ -88,7 +87,7 @@
         .el {
           margin: 8px 0;
           span {
-            color: #fcfcfc;
+            color: $white;
           }
         }
       }
