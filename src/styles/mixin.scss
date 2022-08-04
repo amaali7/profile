@@ -26,7 +26,7 @@ $deep-blue: #1e1f31;
 $white: #fff;
 $light-gray: #aba9b4;
 $light-orang: #f8ccb1;
-$trans-black : #00000049;
+$trans-black: #00000049;
 $trans-orang: #f08f53cb;
 // Color Co
 $gray-one: #968a83;
@@ -60,6 +60,8 @@ $yellow-one: #f0ed53;
     text-align: center;
     padding: 8px 10px;
     border: 2px solid $orang;
+    border-radius: 16px;
+
     width: 70%;
     margin: 40px auto;
     color: $orang;
@@ -109,12 +111,15 @@ $yellow-one: #f0ed53;
     padding-bottom: 20px;
     width: 45%;
     border: 1px solid $orang;
+    border-radius: 16px;
     background-color: $deep-blue;
     z-index: 5;
     .main-box {
       margin: 2rem;
       padding-top: 3vw;
       height: auto;
+      border-radius: 16px;
+
       @include Typography;
     }
     .top-box {
@@ -129,6 +134,7 @@ $yellow-one: #f0ed53;
       height: auto;
       width: 90%;
       border: 1px solid $orang;
+      border-radius: 16px;
       z-index: 6;
       background-color: inherit;
       h1 {
@@ -142,6 +148,7 @@ $yellow-one: #f0ed53;
       }
       .logo {
         height: auto;
+        margin: 6px;
         z-index: 6;
         background-color: inherit;
         img {
@@ -181,4 +188,3 @@ $yellow-one: #f0ed53;
     // font-weight: 300;
   }
 }
-
