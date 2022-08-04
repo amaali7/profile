@@ -12,18 +12,21 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    transition: all ease 0.7s;
 
     .card {
       position: relative;
       margin-top: 60px;
+      margin-left:32px ;
+      margin-right:32px ;
       height: auto;
       width: clamp(95vw, 60%, 48%);
       min-height: 250px;
       padding: 30px;
       padding-top: 60px;
-      border: 2px solid $orang;
+      border: 1px solid $orang;
       border-radius: 16px;
-
+      transition: all ease 1s;
       background-color: $deep-blue;
       z-index: 5;
       .top-box {
@@ -33,7 +36,7 @@
         transform: translate(-50%, -50%);
         height: auto;
         width: 80%;
-        border: 2px solid $orang;
+        border: 1px solid $orang;
         z-index: 6;
         background-color: inherit;
         border-radius: 16px;
@@ -50,6 +53,7 @@
           text-align: center;
         }
       }
+      @include ScaledHover;
     }
     .el {
       font-size: 1rem;
@@ -67,6 +71,7 @@
     gap: 20px;
 
     .contact-links {
+      transition: all ease 1s;
       margin: 2rem auto;
       .contact-link {
         border-bottom: 2px solid $orang;
@@ -81,9 +86,13 @@
           color: $white;
         }
       }
+      @include ScaledHover;
     }
     .contact-element {
       // display: block;
+
+      transition: all ease 1s;
+
       width: auto;
       margin: 0 auto;
       .element {
@@ -94,6 +103,7 @@
           }
         }
       }
+      @include ScaledHover(1.2);
     }
   }
 }

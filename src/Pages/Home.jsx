@@ -31,6 +31,7 @@ const Home = () => {
       </div>
       <div className="text">
         <div className="text-area">
+          <h1>main.c</h1>
           <p>
             <span className="span-4">#</span>
             <span className="span-1">include </span>
@@ -93,7 +94,7 @@ const Home = () => {
             offset={-190}
             duration={3500}
           >
-            Take A Look
+            Compile {"&"} Run
           </Link>
           {/* <a href="#Contact">Take A Look</a> */}
         </div>

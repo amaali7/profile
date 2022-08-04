@@ -7,57 +7,70 @@ $images-hight: 50vw;
   justify-content: space-evenly;
   min-height: calc(100vh-56px);
   .text {
-    flex-basis: (100%)/2.8;
+    flex-basis: (100%)/2.2;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    padding: 32px;
+    transition: all ease 1s;
+    
     .text-area {
       width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border: 0.5px solid $orang;
+      border-radius: 16px;
+      h1{
+        color: $orang;
+        text-align: center;
+        border-bottom: 0.5px solid $orang;
+        width: 100%;
+        padding: 16px 0;
+        margin-bottom: 16px;
+        font-size: 1.2rem;
+      }
       p {
-        margin-top: 20%;
         font-size: 1.2rem;
         color: $white;
+        padding-top: 42px;
         tab-size: 4;
       }
       @include CodeSchema;
       a {
-        margin-bottom: 20%;
         position: relative;
         display: inline-block;
-        font-size: 0.5rem;
-        color: $white;
+        font-size: 1rem;
+        color: $orang;
         text-decoration: none;
         padding: 0.8rem 0px;
-        font-weight: 300;
+        font-weight: bolder;
         margin-top: 60px;
-        width: 11rem;
+        width: 100%;
         height: 3rem;
         text-align: center;
         cursor: pointer;
-        &:before {
-          content: "";
-          position: absolute;
-          top: -2%;
-          left: 10%;
-          width: 2.5rem;
-          height: 2.5rem;
-          border-radius: 3rem;
-          background-color: $orang;
-          z-index: -1;
-          margin-left: -3px;
-          transition: all ease 0.5s;
-        }
-        &:hover:before {
-          width: 80%;
+        transition: all ease 0.5s;
+        border-top: 0.5px solid $orang;
+
+        &:hover {
+          width: 75%;
+          color: $white;
         }
       }
     }
+    @include ScaledHover;
   }
   .images-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: (100%)/2.2;
+    flex-basis: (100%)/2.6;
+    transition: all ease 1s;
+
     .images {
       position: relative;
       width: 30vh;
@@ -75,6 +88,7 @@ $images-hight: 50vw;
         border-radius: 4%;
         padding: 5px;
         border: 0.5px solid $orang;
+        transition: all ease 1s;
       }
       .wheel {
         height: 100%;
@@ -129,7 +143,13 @@ $images-hight: 50vw;
           right: 2%;
         }
       }
+      &:hover {
+        .personal-image {
+          padding: 10px;
+        }
+      }
     }
+    @include ScaledHover;
   }
 }
 
@@ -141,25 +161,18 @@ $images-hight: 50vw;
 @include Query(mobile) {
   .home-page {
     .text {
-      flex-basis: 90%;
-      width: 90%;
+      flex-basis: 95%;
+      width: 95%;
       letter-spacing: 0.3px;
       .text-area {
         width: 100%;
-        padding-left: 12vw;
         p {
-          font-size: 4vw;
+          font-size: 3vw;
         }
         a {
           font-size: 2.5vw;
-          width: 5vw;
-          height: 5vw;
-          padding: 1.25rem 0;
-
-          &::before {
-            height: 7vw;
-            width: 7vw;
-          }
+    
+          // padding: 1.25rem 0;
         }
       }
     }

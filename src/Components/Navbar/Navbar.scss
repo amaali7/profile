@@ -1,15 +1,21 @@
 .link {
   color: $white;
+  @include ScaledHover;
+  padding: 0 16px;
 }
 .nav-logo{
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: $orang;
-    font-weight: 700;
-    padding: 16px 6px;
+    font-weight: bolder;
+    padding: 16px 32px;
+    transition: all ease 1s;
+
     a{
       text-decoration: none;
     }
+    @include ScaledHover;
+
 }
 @include CodeSchema;
 .active-link {

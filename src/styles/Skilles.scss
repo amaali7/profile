@@ -26,9 +26,14 @@
     transition: all ease 0.7s;
     margin: 10px 0;
     width: (100%);
+    transition: all ease 1s;
+    font-weight: bold;
+
     &:hover {
       background-color: $orang;
       color: $white;
+      font-size: 1.2rem;
+      font-weight: bolder;
     }
   }
 }

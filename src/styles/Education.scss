@@ -3,9 +3,11 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
   .image-section {
-    width: 50%;
-    .uofk-images{
+    transition: all ease 1s;
+    width: 45%;
+    .uofk-images {
       transition: all ease 2s;
     }
     img {
@@ -17,10 +19,26 @@
       border: 2px solid $trans-orang;
       border-radius: 1rem;
     }
+    @include ScaledHover(1.1);
   }
 
   .text-section {
     width: 40%;
+
+    transition: all ease 1s;
+    border: 0.5px solid $orang;
+    border-radius: 16px;
+    h1{
+      color: $orang;
+      text-align: center;
+      border-bottom: 0.5px solid $orang;
+      width: 100%;
+      font-size: 1.6vw;
+      font-weight: bold;
+      padding: 16px 0;
+      margin-bottom: 16px;
+      
+    }
     @include CodeSchema;
     .text {
       width: 100%;
@@ -28,8 +46,11 @@
       display: block;
       justify-self: center;
       color: $white;
-      font-size: 1.8vw;
+      font-size: 1.6vw;
+      
+      padding: 32px;
     }
+    @include ScaledHover(1.1);
   }
 }
 @include Query(mobile) {
