@@ -101,16 +101,19 @@ $nav-element-pading: 16px 6px;
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #000000b6;
+      background-color: $trans-black;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 54px;
       left: 0;
+      font-size: 1.5rem;
+      font-weight: bolder;
       a {
-        padding: 16px 24px;
+        padding: calc(7.5vh - 5px) 24px;
         display: block;
         width: 100%;
+        height: calc(20vh - 10px);
         &:hover {
           color: $orang;
           background-color: $trans-black;
@@ -234,5 +237,15 @@ $nav-element-pading: 16px 6px;
     #nav-check:not(checked) ~ .nav-link {
       height: 0px;
     }
+  }
+}
+
+@include Query(smallScreen){
+  .link{
+
+    font-size: 1rem;
+  }
+  .nav-logo{
+    font-size: 1.2rem;
   }
 }

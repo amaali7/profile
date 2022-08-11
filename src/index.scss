@@ -27,10 +27,10 @@ html{
 
 @import './Components/Navbar/Navbar.scss';
 @import './styles/Home.scss';
-// @import './styles/Education.scss';
-// @import './styles/Experience.scss';
-// @import './styles/Skilles.scss';
-// @import './styles/Info.scss';
+@import './styles/Education.scss';
+@import './styles/Experience.scss';
+@import './styles/Skilles.scss';
+@import './styles/Info.scss';
 
 
 @include Query(mobile) {
