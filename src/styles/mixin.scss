@@ -12,7 +12,7 @@ $bp: (
     max: 1440px,
   ),
   largScreen: (
-    min: 1440px,
+    min: 1441px,
     max: 2440px,
   ),
   extraLarg: (
@@ -42,7 +42,7 @@ $yellow-one: #f0ed53;
       }
     }
     @if ($screen == "extraLarg") {
-      @media (min-width: 1201px) {
+      @media (min-width: 2441px) {
         @content;
       }
     }

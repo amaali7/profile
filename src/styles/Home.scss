@@ -1,4 +1,4 @@
-$images-hight: 50vw;
+// $images-hight: 50vw;
 
 .home-page {
   display: flex;
@@ -14,7 +14,7 @@ $images-hight: 50vw;
     margin: auto;
     padding: 32px;
     transition: all ease 1s;
-    
+
     .text-area {
       width: 100%;
       margin: auto;
@@ -24,7 +24,7 @@ $images-hight: 50vw;
       align-items: center;
       border: 0.5px solid $orang;
       border-radius: 16px;
-      h1{
+      h1 {
         color: $orang;
         text-align: center;
         border-bottom: 0.5px solid $orang;
@@ -68,9 +68,9 @@ $images-hight: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: (100%)/2.6;
+    flex-basis: (100%)/2.2;
     transition: all ease 1s;
-
+    margin: auto;
     .images {
       position: relative;
       width: 30vh;
@@ -162,18 +162,22 @@ $images-hight: 50vw;
   .home-page {
     .text {
       flex-basis: 95%;
+
       width: 95%;
       letter-spacing: 0.3px;
+      padding: 8px;
       .text-area {
         width: 100%;
         p {
-          font-size: 3vw;
+          font-size: 1rem;
+        padding: 20px;
         }
         a {
-          font-size: 2.5vw;
-    
-          // padding: 1.25rem 0;
+          font-size: 1rem;
         }
+      }
+      &:hover{
+        scale:1.05;
       }
     }
 
@@ -181,6 +185,8 @@ $images-hight: 50vw;
       flex-basis: 100%;
       justify-content: center;
       align-items: center;
+      margin: 6rem 0;
+
       .images {
         margin-top: 6rem;
         width: 70vw;
@@ -204,29 +210,23 @@ $images-hight: 50vw;
     .text {
       flex-basis: 100%;
       width: 90%;
-      margin-top: 2rem;
+      margin: 2rem 0;
       .text-area {
         width: 100%;
-        padding-left: 12vw;
         p {
-          font-size: 3vw;
+          font-size: 1.4rem;
         }
         a {
           font-size: 2.5vw;
-          width: 25vw;
-          height: 5vw;
           padding: 1.5vw 0;
-          &::before {
-            height: 7vw;
-            width: 7vw;
-          }
         }
       }
     }
     .images-container {
       flex-basis: 100%;
+      margin: 6rem 0;
+
       .images {
-        margin-top: 6rem;
         width: 70vw;
         height: 70vw;
         .personal-image {
@@ -246,29 +246,26 @@ $images-hight: 50vw;
 @include Query(smallScreen) {
   .home-page {
     .text {
-      width: 45vw;
-      .text-area {
+      width: 40vw;
+    .text-area {
         width: 100%;
         p {
-          font-size: 1.8vw;
-          padding-left: 3vw;
+          font-size: 1rem;
+        padding: 2vw;
         }
         a {
-          font-size: 1.8vw;
-          width: 20vw;
-          height: 5vw;
-          &::before {
-            height: 5.5vw;
-            width: 5.5vw;
-          }
+          font-size: 1rem;
         }
       }
+
     }
     .images-container {
       width: 50vw;
+      height: 50vw;
       .images {
-        width: 40vw;
-        height: 40vw;
+        margin-top: 1rem;
+        width:  calc(0.75 * 50vw);
+        height: calc(0.75 * 50vw);
       }
     }
   }
@@ -279,12 +276,12 @@ $images-hight: 50vw;
       width: 40vw;
     }
     .images-container {
-      width: $images-hight;
-      height: $images-hight;
+      width: 50vw;
+      height: 50vw;
       .images {
         margin-top: 1rem;
-        width: calc(0.9 * 50vw);
-        height: calc(0.9 * 50vw);
+        width:  calc(0.75 * 50vw);
+        height: calc(0.75 * 50vw);
       }
     }
   }
@@ -295,8 +292,8 @@ $images-hight: 50vw;
       width: 40vw;
     }
     .images-container {
-      width: $images-hight;
-      height: $images-hight;
+      width: 50vw;
+      height: 50vw;
       .images {
         width: calc(0.75 * 50vw);
         height: calc(0.75 * 50vw);

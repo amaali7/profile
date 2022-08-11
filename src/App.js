@@ -11,10 +11,10 @@ const App = ()=>{
       <main>
         <Navbar/>
         <Home/>
-        <Education/>
-        <Experience/>
-        <Skills/>
-        <Info/>
+        {/* <Education/> */}
+        {/* <Experience/> */}
+        {/* <Skills/> */}
+        {/* <Info/> */}
       </main>
   )
 }
