@@ -6,6 +6,7 @@ import NileU from "../images/nileU.png";
 import SmsProxy from "../images/smsproxy.png";
 import Water from "../images/water.png";
 import UvLamp from "../images/uv.png";
+import Clock from "../images/Clock.png";
 
 const Experience = () => {
   return (
@@ -17,10 +18,42 @@ const Experience = () => {
         <div className="card">
           <div className="top-box">
             <div className="logo">
+              <img src={Clock} alt="Clock" className="mada" />
+            </div>
+            <h1 className="marg10">
+              <a
+                href="https://www.facebook.com/profile.php?id=100086326303701&mibextid=ZbWKwL"
+                className="linko"
+                target="_blank"
+              >
+                Mechatronics
+              </a>
+            </h1>
+          </div>
+          <div className="main-box">
+            <h1 className="header">SpaceTime Clock</h1>
+            <h6 className="span">2021 - 2022</h6>
+            <p className="body">
+              Participation in the project was done by making control circuits
+              and programming the control system using Python and C languages on
+              the Raspberry Pi.
+            </p>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="top-box">
+            <div className="logo">
               <img src={Water} alt="UofK" className="mada" />
             </div>
             <h1 className="marg10">
-              <a href="http://github.com/amaali7/WHO" className="linko" target="_blank">Web App</a>
+              <a
+                href="http://github.com/amaali7/WHO"
+                className="linko"
+                target="_blank"
+              >
+                Web App
+              </a>
             </h1>
           </div>
           <div className="main-box">
@@ -41,7 +74,13 @@ const Experience = () => {
               <img src={UvLamp} alt="UofK" height="110px" className="mada" />
             </div>
             <h1 className="marg10">
-              <a href="https://github.com/amaali7/UV_Final" className="linko" target="_blank">Health Care</a>
+              <a
+                href="https://github.com/amaali7/UV_Final"
+                className="linko"
+                target="_blank"
+              >
+                Health Care
+              </a>
             </h1>
           </div>
           <div className="main-box">
@@ -60,11 +99,17 @@ const Experience = () => {
               <img src={SmsProxy} alt="UofK" className="mada" />
             </div>
             <h1 className="marg10">
-              <a href="https://github.com/amaali7/ESP32-SMS" className="linko" target="_blank">Communications Technology</a>
+              <a
+                href="https://github.com/amaali7/ESP32-SMS"
+                className="linko"
+                target="_blank"
+              >
+                Communications Technology
+              </a>
             </h1>
           </div>
           <div className="main-box">
-            <h1 className="header"> SMS Smart Proxy</h1>
+            <h1 className="header">SMS Smart Proxy</h1>
             <h6 className="span">2018 - 2019</h6>
             <p className="body">
               An interactive response system that transfers SMS to a central
@@ -126,7 +171,7 @@ const Experience = () => {
             <div className="logo">
               <img src={Stem} alt="UofK" className="mada" />
             </div>
-            <h1 className="marg10">STEM Education Sudan </h1>
+            <h1 className="marg10">STEM Education Sudan</h1>
           </div>
           <div className="main-box">
             <h1 className="header">Electronics and Programing</h1>

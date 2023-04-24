@@ -86,12 +86,12 @@ const Info = () => {
         <div className="contact-element">
           <div className="element">
             <span className="header el">
-              Phone : <span>+20-115-149-6799</span>
+								Phone : <a href="tel:+201556270279"><span>+20-155-627-0279</span></a>
             </span>
           </div>{" "}
           <div className="element">
             <span className="header el">
-              Address : <span>Egypt, Cairo, Al Maadi </span>
+              Address : <span>Egypt, Cairo, Hadayeq El-Maadi </span>
             </span>
           </div>
         </div>
