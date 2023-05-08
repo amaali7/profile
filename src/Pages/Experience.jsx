@@ -7,10 +7,27 @@ import SmsProxy from "../images/smsproxy.png";
 import Water from "../images/water.png";
 import UvLamp from "../images/uv.png";
 import Clock from "../images/Clock.png";
+import { useState } from "react";
+import Model from "../Components/Model/Model";
 
 const Experience = () => {
+  const [isModel, setModel] = useState(false);
+  const handelIsModel = () => {
+    setModel(!isModel);
+  };
   return (
     <section id="Experience" className="page-section experience-page">
+      {isModel && (
+        <Model setModel={setModel}>
+          <div className="top-box">
+            <h1>Video</h1>
+          </div>
+          <div className="main-box">
+            <iframe src="https://www.youtube.com/embed/L-xESm2dn9M"/>
+          </div>
+        </Model>
+      )}
+      {/* <Model /> */}
       <h1 className="rounded-header" style={{ width: "300px" }}>
         Freelancer
       </h1>
@@ -37,6 +54,12 @@ const Experience = () => {
               Participation in the project was done by making control circuits
               and programming the control system using Python and C languages on
               the Raspberry Pi.
+              <br></br>
+              <div>
+                <button className="video" onClick={handelIsModel}>
+                  Video
+                </button>
+              </div>
             </p>
           </div>
         </div>

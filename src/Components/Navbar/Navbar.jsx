@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-scroll";
 // import "./Navbar.scss";
+import { useRef } from 'react';
 
 const Navbar = () => {
+  const ref = useRef(); 
+  const Unchecked = () => {
+       ref.current.checked = false;
+    }
   return (
     <nav className="navbar">
-      <input type="checkbox" id="nav-check"></input>
+      <input type="checkbox" id="nav-check" ref={(element) => { ref.current = element }}/>
       <div className="current-part">
       <div className="nav-logo"><a href="#Home"><span className="span-4">class</span> <span className="span-1">Profile()</span></a></div>
       </div>
@@ -25,6 +30,7 @@ const Navbar = () => {
           offset={-190}
           duration={1500}
           className="link"
+          onClick={Unchecked}
         >
           .home()
         </Link>
@@ -36,6 +42,7 @@ const Navbar = () => {
           offset={-54}
           duration={1500}
           className="link"
+          onClick={Unchecked}
         >
           .education()
         </Link>
@@ -47,6 +54,7 @@ const Navbar = () => {
           offset={-54}
           duration={1500}
           className="link"
+          onClick={Unchecked}
         >
           .experience()
         </Link>
@@ -58,6 +66,7 @@ const Navbar = () => {
           offset={-54}
           duration={1500}
           className="link"
+          onClick={Unchecked}
         >
           .skills()
         </Link>
@@ -69,6 +78,7 @@ const Navbar = () => {
           offset={-54}
           duration={1500}
           className="link"
+          onClick={Unchecked}
         >
           .info()
         </Link>

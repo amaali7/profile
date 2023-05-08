@@ -17,8 +17,8 @@
     .card {
       position: relative;
       margin-top: 60px;
-      margin-left:32px ;
-      margin-right:32px ;
+      margin-left: 32px;
+      margin-right: 32px;
       height: auto;
       width: clamp(95vw, 60%, 48%);
       min-height: 250px;
@@ -55,15 +55,17 @@
       }
       @include ScaledHover;
     }
+
     .el {
       font-size: 1rem;
       margin: 8px 0;
-			a{
-					text-decoration: none;
-			}
-      span {
-        color: $white;
-        font-size: 1rem;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        span {
+          color: $white;
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -101,6 +103,7 @@
       .element {
         .el {
           margin: 8px 0;
+          text-decoration: none;
           span {
             color: $white;
           }

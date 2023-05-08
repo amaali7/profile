@@ -3,19 +3,18 @@
   @include ScaledHover;
   padding: 0 16px;
 }
-.nav-logo{
-    display: inline-block;
-    font-size: 1.2rem;
-    color: $orang;
-    font-weight: bolder;
-    padding: 16px 32px;
-    transition: all ease 1s;
+.nav-logo {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: $orang;
+  font-weight: bolder;
+  padding: 16px 32px;
+  transition: all ease 1s;
 
-    a{
-      text-decoration: none;
-    }
-    @include ScaledHover;
-
+  a {
+    text-decoration: none;
+  }
+  @include ScaledHover;
 }
 @include CodeSchema;
 .active-link {
@@ -77,7 +76,6 @@ $nav-element-pading: 16px 6px;
       position: absolute;
       right: 0px;
       top: 0px;
-
       label {
         display: inline-block;
         width: 46px;
@@ -101,7 +99,7 @@ $nav-element-pading: 16px 6px;
       position: absolute;
       display: block;
       width: 100%;
-      background-color: $trans-black;
+      background-color: $deep-blue;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -110,10 +108,11 @@ $nav-element-pading: 16px 6px;
       font-size: 1.5rem;
       font-weight: bolder;
       a {
-        padding: calc(7.5vh - 5px) 24px;
+        // padding:24px;
+        padding: 16px 24px;
         display: block;
         width: 100%;
-        height: calc(20vh - 10px);
+        // height: 30px;
         &:hover {
           color: $orang;
           background-color: $trans-black;
@@ -187,10 +186,12 @@ $nav-element-pading: 16px 6px;
       position: absolute;
       display: block;
       width: 100%;
-      background-color: $trans-black;
+      background-color: $deep-blue;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
+      font-size: 1.5rem;
+      font-weight: bolder;
       top: 54px;
       left: 0;
       a {
@@ -240,12 +241,11 @@ $nav-element-pading: 16px 6px;
   }
 }
 
-@include Query(smallScreen){
-  .link{
-
+@include Query(smallScreen) {
+  .link {
     font-size: 1rem;
   }
-  .nav-logo{
+  .nav-logo {
     font-size: 1.2rem;
   }
 }
